@@ -1,25 +1,39 @@
-## <img src="https://github.com/DRAWSVG/drawsvg-editor/blob/main/build/jay-rond.png?raw=true" width="32px" align="center" alt="DRAWSVG icon"> SVG Editor
+## 组态画面编辑器
 
- **SVG** Editor from [DRAWSVG](https://drawsvg.org) drawing tools
- 
- This application is builded with [DRAWSVG dev tools](http://drawsvg.org/#devtools)
- and is also available [online](http://drawsvg.org/drawsvg.html)
- 
- See [documentation](http://drawsvg.org/doc/index.html) [showcases](http://drawsvg.org/drawsvg.html#showcase:)
-
-## Using
-
-You can [download the latest release](https://github.com/DRAWSVG/drawsvg-editor/releases) for your operating system or build it yourself (see below).
+ **SVG** 编辑器被用于组态建模，可以方便的构建基于WEB的自动化组态应用。
 
 
-## Building
+## 快速开始
 
-You'll need [Node.js](https://nodejs.org) installed on your computer in order to build this app.
-Then you can use npm or yarn tool as package manager.
+需要预先安装Node.js，然后使用npm安装和运行。
 
 ```bash
 $ git clone https://github.com/DRAWSVG/drawsvg-editor
 $ cd drawsvg-editor
+$ npm config set registry https://registry.npm.taobao.org --global
+$ npm config set disturl https://npm.taobao.org/dist --global
+$ set ELECTRON_MIRROR=http://npm.taobao.org/mirrors/electron/
 $ npm install (or yarn install)
 $ npm start (or yarn start)
+```
+
+或如下启动静态WEB服务，然后访问：http://127.0.0.1:8000/src/drawsvg/edrawsvg.html。
+
+```bash
+$ python -m http.server
+```
+
+## 待完成任务
+
+1）在nodered中如何利用SVG界面事件操控；
+
+2）绘制动画svg，实现空调任务。
+
+
+
+https://funprojects.blog/2020/04/15/animated-node-red-graphics-with-mqtt-and-svg/
+
+https://www.opto22.com/support/resources-tools/demos/svg-image-library
+
+
 
