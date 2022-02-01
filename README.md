@@ -17,7 +17,7 @@ $ npm install (or yarn install)
 $ npm start (or yarn start)
 ```
 
-或如下启动静态WEB服务，然后访问：http://127.0.0.1:8000/src/drawsvg/edrawsvg.html。
+或如下启动静态WEB服务，然后访问：http://127.0.0.1:8000/src/drawsvg/edrawsvg.html
 
 ```bash
 $ python -m http.server
